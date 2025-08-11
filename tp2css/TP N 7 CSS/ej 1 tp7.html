@@ -1,0 +1,41 @@
+<style>
+  .container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border: 1px solid #333;
+    margin: 40px auto;
+  }
+  .img-pos {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+  }
+  .top {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .left {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  .right {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+  .center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+</style>
+<div class="container">
+  <img src="https://via.placeholder.com/60" class="img-pos top" alt="Top">
+  <img src="https://via.placeholder.com/60" class="img-pos left" alt="Left">
+  <img src="https://via.placeholder.com/60" class="img-pos right" alt="Right">
+  <img src="https://via.placeholder.com/60" class="img-pos center" alt="Center">
+</div>
